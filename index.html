@@ -9,18 +9,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- Various Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Ben Wingerter</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,10 +61,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -72,76 +81,65 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <div style="border: 10px solid #333; border-radius: 999px; height: 300px; width: 300px; background-color: #333; text-align: center; margin: auto;">
+                    <div class="profile-image">
                         <img class="img-responsive" src="img/profile.png" alt="">
                     </div>
                     <div class="intro-text">
                         <h1 class="name">Ben Wingerter</h1>
                         <hr class="star-light">
-                        <span class="skills">Student - Software Developer</span>
+                        <span class="skills">Computer Science and Economics Student</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/quoteya.png" class="img-responsive" alt="QuoteYa">
-                    </a>
-                </div>
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/airmeet.png" class="img-responsive" alt="AirMeet">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section class="success" id="about">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>About Me</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>
-                        I am a first year computer science student at the Jeffrey S. Raikes School of Computer Science and Management
-                        at the University of Nebraska–Lincoln. 
-                        I have significant experience in software development, and I am passionate about using technology to solve meaningful problems.
-                        I currently work as a Cyber Security Intern at Gallup and a backend developer of the QuoteYa app.
+                    <p class="body-text-justify">
+                        I am a freshman student at the Jeffrey S. Raikes School of Computer Science and Management at the University of Nebraska–Lincoln.
+                        I am pursuing a Bachelor of Science degree with majors in Computer Science and Economics and minors in business and mathematics.
+                    </p>
+                    <p class="body-text-justify">
+                        Outside of work and the classroom, I enjoy reading, working on personal programming projects, and running. Some of my favorite
+                         publications to read include The New York Times, The Economist, and Foreign Affairs.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Experience</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>
-                        In addition to technology, I am very interested in economics, politics, and global affairs.
-                        My favorite publications to read include the Wall Street Journal, the New York Times, The Economist, and Foreign Affairs.
-                    </p>
+                    <ul class="experience-list">
+                        <li class="experience-item">
+                            Backend Developer @ <a class="employer-link" href="https://quoteya.com">QuoteYa</a>
+                        </li>
+                        <li class="experience-item">
+                            Cyber Security Intern @ <a class="employer-link" href="https://www.gallup.com/">Gallup</a>
+                        </li>
+                        <li class="experience-item">
+                            Web Developer Intern @ <a class="employer-link" href="https://www.gallup.com/">Gallup</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -156,30 +154,8 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
-                <style>
-                    .contactText {
-                        text-align: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                        padding-bottom: 10px;
-                    }
-                    #errorMessage {
-                        color: red;
-                        display: none;
-                    }
-                    #successMessage {
-                        display: none;
-                    }
-                </style>
-                <div id="successMessage" class="col-lg-8 col-lg-offset-2">
-                    <div class="contactText">
-                        <p>Thanks for the message. I'll be in contact with you shortly.</p>
-                    </div>
-                </div>
-                <div id="formContainer" class="col-lg-8 col-lg-offset-2">
-                    <p class="contactText">Feel free to <a target="_blank" href="mailto:bwingerter@huskers.unl.edu">email me</a> if you have any questions or just want to say hello!</p>
-                </div>
+            <div id="contact-container">
+                <p class="contact-text">Feel free to <a target="_blank" href="mailto:contact@benwingerter.com">email me</a> if you have any questions or just want to say hello!</p>
             </div>
         </div>
     </section>
@@ -191,7 +167,7 @@
                 <div class="row">
                     <div class="footer-col col-md-6">
                         <h3>Location</h3>
-                        <p>Omaha, Nebraska</p>
+                        <p>Lincoln, Nebraska</p>
                     </div>
                     <div class="footer-col col-md-6">
                         <h3>Around the Web</h3>
@@ -200,14 +176,10 @@
                                 <a href="https://www.linkedin.com/in/benwingerter/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="https://github.com/Athletesrun" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://github.com/benwingerter" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
-                    <!--<div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -229,80 +201,8 @@
         </a>
     </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>QuoteYa</h2>
-                            <hr class="star-primary">
-                            <a href="https://quoteya.com">
-                                <img src="img/portfolio/quoteya.png" class="img-responsive img-centered" alt="QuoteYa">
-                            </a>
-                            <p>Quoteya is an app where people can save their quotes and memories in the cloud. Users have a dashboard where they can search through all of their saved quotes. User's can attach images, geolocations, and dates to their quotes. Quotes can also be easily shared to social media. QuoteYa is available on IOS, Android and the web. I served primary developer of the backend server as well as the assistant front-end developer.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Cairn, LLC.
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>June 2016-Present
-                                    </strong>
-                                </li>
-                                <li>
-                                    <strong><a target="_blank" href="https://quoteya.com">Website</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>AirMeet</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/airmeet.png" class="img-responsive img-centered" alt="AirMeet">
-                            <p>AirMeet was an innovative app that enabled easy interaction between attendees at large conferences. It allowed attendees to search through a list of other attendees, interact with a map that contained the locations of exibits and other users, message with other users, and view event-specific information. AirMeet was available on the App Store and the Google Play Store. The project was used by Creighton Prep's IT Innovation team to win the 2017 IT Innovaiton Cup. I served as the lead developer of the project. The project has since been discontinued.</p>
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>September 2016-April 2017</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Submit Form Contact Script -->
-    <!--<script src="js/submitContact.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
