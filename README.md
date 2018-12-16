@@ -2,4 +2,6 @@
 
 Code for [my website](https://benwingerter.com/)
 
-** Compile less code before pushing a new version **
+Variations of favicon generated using [RealFaviconGenerator](https://realfavicongenerator.net/)
+
+**Compile less code before pushing a new version**
