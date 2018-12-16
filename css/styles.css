@@ -358,6 +358,48 @@ fieldset[disabled] .btn-primary.active {
   color: #2C3E50;
   background-color: white;
 }
+.btn-download {
+  color: #2C3E50;
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+  font-weight: 700;
+}
+.btn-download:hover,
+.btn-download:focus,
+.btn-download:active,
+.btn-download.active,
+.open .dropdown-toggle.btn-download {
+  color: #2C3E50;
+  background-color: #1a242f;
+  border-color: #161f29;
+}
+.btn-download:active,
+.btn-download.active,
+.open .dropdown-toggle.btn-download {
+  background-image: none;
+}
+.btn-download.disabled,
+.btn-download[disabled],
+fieldset[disabled] .btn-download,
+.btn-download.disabled:hover,
+.btn-download[disabled]:hover,
+fieldset[disabled] .btn-download:hover,
+.btn-download.disabled:focus,
+.btn-download[disabled]:focus,
+fieldset[disabled] .btn-download:focus,
+.btn-download.disabled:active,
+.btn-download[disabled]:active,
+fieldset[disabled] .btn-download:active,
+.btn-download.disabled.active,
+.btn-download[disabled].active,
+fieldset[disabled] .btn-download.active {
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+}
+.btn-download .badge {
+  color: #2C3E50;
+  background-color: #2C3E50;
+}
 .btn-success {
   color: white;
   background-color: #337ab7;
@@ -399,6 +441,17 @@ fieldset[disabled] .btn-success.active {
 .btn-success .badge {
   color: #337ab7;
   background-color: white;
+}
+.btn-resume {
+  color: #2C3E50;
+  border: 1px solid #2C3E50;
+}
+.btn-resume:hover,
+.btn-resume:focus,
+.btn-resume:active,
+.btn-resumeactive {
+  color: #337ab7;
+  border: 1px solid #337ab7;
 }
 .btn-social {
   display: inline-block;

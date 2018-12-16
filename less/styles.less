@@ -367,9 +367,26 @@ footer {
 	font-weight: 700;
 }
 
+.btn-download {
+	.button-variant(@theme-primary; @theme-primary; @theme-primary);
+	font-weight: 700;
+}
+
 .btn-success {
 	.button-variant(white; @theme-success; @theme-success);
 	font-weight: 700;
+}
+
+.btn-resume {
+	color: @theme-primary;
+	border: 1px solid @theme-primary;
+	&:hover,
+	&:focus,
+	&:active,
+	&active {
+		color: @theme-success;
+		border: 1px solid @theme-success;
+	}
 }
 
 .btn-social {
