@@ -577,6 +577,7 @@ div#maincontent {
   font-size: 1.5em;
   line-height: 2em;
   list-style: none;
+  margin-bottom: 10px;
 }
 .employer-link {
   color: #FFFFFF;
