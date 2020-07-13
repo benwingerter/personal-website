@@ -47,7 +47,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.social-icons > .social-icon {
+.social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -62,4 +62,30 @@ a:hover {
 
 .social-icon:hover {
     background-color: var(--orange);
+    color: var(--white);
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--gray-800);
+        color: var(--white);
+        font-weight: lighter;
+    }
+    
+    a:hover {
+        color: var(--orange);
+    }
+
+    .social-icon {
+        background-color: var(--white);
+        color: var(--gray-800);
+    }
+
+    .social-icon:hover {
+        opacity: 60%;
+        background-color: var(--white);
+        color: var(--gray-800);
+    }
+
+}
+
